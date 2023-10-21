@@ -87,12 +87,18 @@ body{
     /* animation: name 3s ease-in-out infinite alternate; */
     color: var(--red);
     font-size: 4rem; 
-    flex-grow: 5;
+
     
     
     font-weight:900 ;
 }
-
+@media screen and (max-width: 400px) {
+    #name div{
+        font-size: 0.6em;
+        /* color: aqua; */
+    }
+    
+}
 
 #main{
     padding: 64px 128px  0px 128px;
@@ -232,7 +238,7 @@ body{
 @media screen and (max-width: 720px) {
     #intro-head{
         font-size: 2em;
-        
+        text-align: center;
     }
     #main-right{
         display: none;
@@ -348,6 +354,9 @@ background-color: white;
  
     #skills{
         padding: 8px;
+        width: 100%;
+        /* display: flex; */
+        /* justify-content: space-between; */
     }
 }
 #skills-title{
@@ -356,9 +365,11 @@ background-color: white;
     font-weight: 700;
     justify-content: center;
     justify-items: center;
-    height: 4px;
-    width: 200px;
+    height: 16px;
+    flex: 1;
+    /* min-width: 160px; */
     rotate: -90deg;
+
 }
 #skills-title hr{
     width: 32px;
@@ -445,6 +456,7 @@ background-color: var(--bg);
     background-color:  var(--main);
 }
 #skill-collection{
+    flex-grow: 5;
     display: grid;
     
     grid-template-columns:1fr 1fr;
@@ -456,6 +468,11 @@ background-color: var(--bg);
     width: 100%;
     padding: 32px;
     gap: 32px   ;
+}
+@media screen and (max-width:460px) {
+    #skill-collection{
+        transform: translateY(-30px);
+    }
 }
 @media screen and (max-width:800px) {
     #skills{
