@@ -10,18 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Tanush Agarwal</title>
   </head>
   <body>
     <div class="navbar">
-      <div class="navbar-item" id="name">TANUSH AGARWAL</div>
-      <div class="navbar-item"><a href="#about">ABOUT ME</a></div>
-      <div class="navbar-item"><a href="#skills">SKILLS</a></div>
-      <div class="navbar-item"><a href="#resume">RESUME</a></div>
+      <div class="navbar-item" id="name">
+        <div>TANUSH AGARWAL</div>
+        <div id="ham">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
 
-      <div class="navbar-item"><a>PROJECTS</a></div>
-      <div class="navbar-item"><a href="#contact">CONTACT</a></div>
+      <div id="navbar-links">
+        <div class="navbar-item"><a href="#about">ABOUT ME</a></div>
+        <div class="navbar-item"><a href="#skills">SKILLS</a></div>
+        <div class="navbar-item"><a href="#resume">RESUME</a></div>
+
+        <div class="navbar-item"><a>PROJECTS</a></div>
+        <div class="navbar-item"><a href="#contact">CONTACT</a></div>
+      </div>
     </div>
+
     <section id="main">
       <div id="main-left">
         <div id="greet">
@@ -37,11 +52,36 @@
           am a quick learner and I am always ready to take up new challenges.
         </div>
         <div id="social-media-handles">
-          <img width="40" height="40" src="https://img.icons8.com/ios/50/globe--v1.png" alt="globe--v1"/>
-          <img width="40" height="40" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
-          <img width="40" height="40" src="https://img.icons8.com/ios/50/facebook--v1.png" alt="facebook--v1"/>
-          <img width="40" height="40" src="https://img.icons8.com/ios/50/tumblr--v2.png" alt="tumblr--v2"/>
-          <img width="40" height="40" src="https://img.icons8.com/ios/50/twitterx--v2.png" alt="twitterx--v2"/>
+          <img
+            width="40"
+            height="40"
+            src="https://img.icons8.com/ios/50/globe--v1.png"
+            alt="globe--v1"
+          />
+          <img
+            width="40"
+            height="40"
+            src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+            alt="instagram-new--v1"
+          />
+          <img
+            width="40"
+            height="40"
+            src="https://img.icons8.com/ios/50/facebook--v1.png"
+            alt="facebook--v1"
+          />
+          <img
+            width="40"
+            height="40"
+            src="https://img.icons8.com/ios/50/tumblr--v2.png"
+            alt="tumblr--v2"
+          />
+          <img
+            width="40"
+            height="40"
+            src="https://img.icons8.com/ios/50/twitterx--v2.png"
+            alt="twitterx--v2"
+          />
         </div>
       </div>
       <div id="main-right">
@@ -49,7 +89,7 @@
       </div>
     </section>
     <section id="about">
-      <div style="display: flex;">
+      <div style="display: flex; flex-wrap: wrap;">
         <div id="about-left">
           <img src="person-half-image.png" alt="" srcset="" />
         </div>
@@ -75,7 +115,7 @@
           </div>
         </div>
       </div>
-      
+
       <section id="skills">
         <div id="skills-title">
           <hr />
@@ -121,7 +161,7 @@
         </div>
       </section>
     </section>
-    
+
     <section id="expertise">
       <div id="title">Expertise Area</div>
       <div>
@@ -174,14 +214,7 @@
         perferendis, architecto adipisci error fugiat officia. Repellendus
         laboriosam facere repellat magni.
       </div>
-      <div
-        style="
-          display: flex;
-          justify-content: space-evenly;
-          width: 100%;
-          padding: 32px 0px;
-        "
-      >
+      <div id="resume-container">
         <div id="education">
           <div id="title">
             <img
@@ -192,7 +225,7 @@
             />
             Education:
           </div>
-       
+
           <div class="kcard">
             <div class="time">June 2023 - Present</div>
             <div class="title">B.Tech Industrial and Systems Eng</div>
@@ -223,7 +256,6 @@
             </div>
             <div class="institution">Akshara Sree School, Adoni</div>
           </div>
-        
         </div>
         <div id="experience">
           <div id="title">
@@ -244,7 +276,9 @@
                 Perferendis, tempora praesentium! Iusto nihil omnis repellat
                 dolores?
               </div>
-              <div class="institution">Entrepreneurship Cell, IIT Kharagpur</div>
+              <div class="institution">
+                Entrepreneurship Cell, IIT Kharagpur
+              </div>
             </div>
             <div class="kcard">
               <div class="time">August 2023 - Present</div>
@@ -254,58 +288,98 @@
                 Perferendis, tempora praesentium! Iusto nihil omnis repellat
                 dolores?
               </div>
-              <div class="institution">Student Welfare Group,Technology Students Gymkhana, IIT Kharagpur</div>
+              <div class="institution">
+                Student Welfare Group,Technology Students Gymkhana, IIT
+                Kharagpur
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div  style="position: relative; background-color: white;">
+    <div style="position: relative; background-color: white">
       <section id="contact">
         <div id="left">
-        <div id="hello">
-          Let's make something new,different and more
-          meaningful thing more visual or Conceptual? <br> <span> Just Say Hello!</span>
-        </div>
-        <div style="width: 100%; font-weight: 500;font-size: 18px;">
-          - +91 96799689833 <br>
-          <br>
-          - tanush@myyahoo.com <br>
-          <br>
-          - BC 208- Lal Bahadhur Shastri Hall of residence,<br>  IIT Kharagpur, West Bengal, India
-          <br>
-          <br>
-          <br>
-          <div id="social-media-handles-2">
-            <img width="40" height="40" src="https://img.icons8.com/ios/50/globe--v1.png" alt="globe--v1"/>
-            <img width="40" height="40" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/>
-            <img width="40" height="40" src="https://img.icons8.com/ios/50/facebook--v1.png" alt="facebook--v1"/>
-            <img width="40" height="40" src="https://img.icons8.com/ios/50/tumblr--v2.png" alt="tumblr--v2"/>
-            <img width="40" height="40" src="https://img.icons8.com/ios/50/twitterx--v2.png" alt="twitterx--v2"/>
+          <div id="hello">
+            Let's make something new,different and more meaningful thing more
+            visual or Conceptual? <br />
+            <span> Just Say Hello!</span>
           </div>
-
-        </div>
         </div>
         <div id="right">
-            <div id="form">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Mail Address">
-            <input type="text" placeholder="Your Budget(optional)">
-            <textarea name="" id="" cols="30" rows="4" placeholder="Project Description"></textarea>
-            <div style="display: flex; justify-content: flex-end; width: 100%; padding: 8px;" >
+          <div id="form">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Mail Address" />
+            <input type="text" placeholder="Your Budget(optional)" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="Project Description"
+            ></textarea>
+            <div
+              style="
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                padding: 8px;
+              "
+            >
               <button id="hire-me">HIRE ME</button>
             </div>
-            </div>
+          </div>
         </div>
-      
-      
+        <div id="footer" style="width: 100%; font-weight: 500; font-size: 18px">
+          - +91 96799689833 <br />
+          <br />
+          - tanush@myyahoo.com <br />
+          <br />
+          - BC 208- Lal Bahadhur Shastri Hall of residence,<br />
+          IIT Kharagpur, West Bengal, India
+          <br />
+          <br />
+          <br />
+          <div id="social-media-handles-2">
+            <img
+              width="40"
+              height="40"
+              src="https://img.icons8.com/ios/50/globe--v1.png"
+              alt="globe--v1"
+            />
+            <img
+              width="40"
+              height="40"
+              src="https://img.icons8.com/ios/50/instagram-new--v1.png"
+              alt="instagram-new--v1"
+            />
+            <img
+              width="40"
+              height="40"
+              src="https://img.icons8.com/ios/50/facebook--v1.png"
+              alt="facebook--v1"
+            />
+            <img
+              width="40"
+              height="40"
+              src="https://img.icons8.com/ios/50/tumblr--v2.png"
+              alt="tumblr--v2"
+            />
+            <img
+              width="40"
+              height="40"
+              src="https://img.icons8.com/ios/50/twitterx--v2.png"
+              alt="twitterx--v2"
+            />
+          </div>
+        </div>
+
+        <div id="blue-bg"></div>
       </section>
-      <div id="blue-bg">
-  
-      </div>
     </div>
-   
-   
-    <script src="script.js"></script>
+
+    <script src="script.js">
+      
+    </script>
   </body>
 </html>
