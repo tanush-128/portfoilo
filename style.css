@@ -213,6 +213,7 @@ body {
   }
 
   #navbar-links {
+    display: none;
     flex-direction: column;
     background-color: white;
   }
@@ -744,6 +745,16 @@ body {
                20px -20px 60px #ffffff;
   /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); */
   transform: rotate3d(0.5, -0.866, 0, 20deg) rotate(1deg);
+
+  transform: rotate3d(1, 1, 1,0deg);
+  /* transform: rotateY(8deg); */
+  border-radius: 15px;
+background: linear-gradient(145deg, #feffff, #d5d9e4);
+box-shadow:  20px 20px 60px #c9cdd7,
+             -20px -20px 60px #ffffff;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+
 }
 
 .kcard .time {
