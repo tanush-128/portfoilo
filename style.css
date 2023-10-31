@@ -946,3 +946,107 @@ box-shadow:  20px 20px 60px #c9cdd7,
   font-weight: 600;
   border: var(--main) solid 2px;
 }
+
+.projects-body{
+  padding: 16px;
+  gap: 2rem;
+}
+.project{
+ 
+  height: 240px;
+  margin: 32px 128px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 15px;
+
+box-shadow:  20px 20px 60px #c9cdd7,
+             -20px -20px 60px #ffffff;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  display: flex;
+  gap: 64px;
+  transition: all 0.3s ease;
+  
+}
+.projects-body .project img{
+    /* width: 100%; */
+    height: 100%;
+    object-fit: contain;
+}
+.project .content-top .title{
+font-size: 32px;
+font-weight: 700;
+transition: all 0.3s ease;
+
+}
+
+.project .content-bottom .title{
+font-size: 24px;
+font-weight: 600;
+}
+.project .content{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.project .content-bottom {
+display: flex;
+justify-content: space-between ;
+}
+.project .content-bottom button{
+
+  border: none;
+  background-color: var(--red);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0 16px;
+  margin: 16px 0px;
+  width: 160px;
+  height: 54px;
+}
+.project:hover .content-top .title{
+  color: var(--red);
+  
+}
+.project:hover {
+  transform: translateY(-12px) translateX(-12px);
+}
+
+.project .content-bottom img{
+  transition: all 0.3s ease;
+}
+.project:hover .content-bottom img{
+background-color: var(--main);
+padding: 8px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .project{
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 720px){
+  .project .content-bottom{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project{
+    margin: 8px;
+    padding: 16px;
+  }
+  .projects-body{
+  padding: 1em;
+  }
+  #hello{
+    padding: 4px;
+  }
+  #contact{
+    padding: 8px;
+  }
+}
+
