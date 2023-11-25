@@ -1,2 +1,1 @@
-This is portfolio website of Tanush Aggarwal.
-
+This is portfolio website of Tanush Aggarwal;
